@@ -1,0 +1,34 @@
+.nav{
+	border-bottom: 1px solid #c1c1c1; 
+	padding: 10px;
+}
+
+.logo{
+	color: #4890cb;
+}
+
+.color{
+	background-color: #5bbd9d;
+	color: #fff; 
+}
+
+.footer-color{
+	background-color: #edeff1;
+}
+
+.header-color{
+	background-color: #646363;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+
+.color:focus{
+	background-color: #5bbd9d;
+	color: white;
+}
+
+
+
+
