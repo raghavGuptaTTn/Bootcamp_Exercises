@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+table{
+	font-family: 'Lato', sans-serif;
+	color: green;
+	border-collapse: collapse;
+	/*border : 2px solid black;*/
+}
+td,th{
+	padding: 10px;
+	font-size: 20px;
+	width: 200px;
+	text-align: center;
+	/*border-left: 1px solid #c1c1c1;*/
+}
+
+tr{
+	border-bottom: 1px solid #daffcc;
+}
+
+/*table tr{
+	border: 1px solid green;
+	border-bottom: 1px solid green;
+}*/
+
+#heading{
+	background-color: green;
+	color: white;
+}

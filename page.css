@@ -1,0 +1,83 @@
+body{
+	background-color: #4f4f4f;
+	margin: 0;
+}
+
+#main{
+	background-color: #252525;
+	width: 90%;
+	margin: 0 auto;
+	color: white;
+}
+h1{
+	font-size: 30px;
+	/*margin: 20px;*/
+	padding: 10px;
+}
+a{
+	background-color: #000;
+	color: white;
+	padding: 10px;
+	margin: 0;
+	display: inline-block;
+}
+
+#mainImage{
+	height: 360px;
+	width: 960px;
+}
+
+.group{
+	width: 960px;
+	margin: 0 auto;
+}
+
+#groupWrap{
+	background-color: white;
+	padding: 20px;
+}
+
+#description{
+	background-color: #e7ebee;
+	color: black;
+	padding: 15px;
+	text-transform: uppercase;
+}
+
+h2{
+	color: #707070;
+	/*margin-top: 15px;*/
+	padding-top: 15px;
+	margin-bottom: 5px;
+
+}
+
+.card{
+	border: 1px solid #c1c1c1;
+	padding: 3px;
+	padding-bottom: 0;
+}
+
+.gallery{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.galleryItem{
+	width: 215px;
+	height: 315px;
+	/*display: inline-block;*/
+	/*float: left;*/
+
+}
+
+footer{
+	padding: 5px 0;
+	font-size: 15px;
+}
+
+nav{
+	background-color: black;
+	/*margin-bottom: 20px;*/
+}
