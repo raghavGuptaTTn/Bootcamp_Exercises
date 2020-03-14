@@ -1,10 +1,13 @@
 package com.spring.jpa.assignment2.normalQuestions;
 
+import com.spring.jpa.assignment2.normalQuestions.entities.Employee;
 import com.spring.jpa.assignment2.normalQuestions.repos.EmployeeRepository;
 import com.spring.jpa.assignment2.normalQuestions.repos.WorkerRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+
+import java.util.List;
 
 @SpringBootApplication
 public class Assignment1Application {
@@ -30,9 +33,9 @@ public class Assignment1Application {
 //        employeeRepository.save(new Employee("sushant", "gopal", 10, 60));
 
 //          view the table.
-//          employeeRepository.findAllEmployees()
-//                            .stream()
-//                            .forEach(e-> System.out.println(e));
+          employeeRepository.findAllEmployees()
+                            .stream()
+                            .forEach(e-> System.out.println(e));
 
 
 //        Question 1 ===========================================
@@ -42,7 +45,7 @@ public class Assignment1Application {
 //        }
 
 //        Question 2 ===========================================
-//        employeeRepository.updateEmployeeSalary(employeeRepository.findMinSalary(), 99999999);
+//        employeeRepository.updateEmployeeSalary(employeeRepository.findAvgSalary(), 99999999);
 //        employeeRepository.findAllEmployees()
 //                          .stream()
 //                          .forEach(e-> System.out.println(e));
@@ -88,9 +91,6 @@ public class Assignment1Application {
 //        System.out.println(workerRepository.findById(105).get());
 
 
-
-
-//        Question 6
 
 
 

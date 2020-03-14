@@ -27,8 +27,8 @@ public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
 
 
     // Help for question 2
-    @Query("select min(salary) as minsal from Employee")
-    public Integer findMinSalary();
+    @Query("select avg(salary) as minsal from Employee")
+    public Integer findAvgSalary();
 
 
     // Question 2
@@ -36,8 +36,15 @@ public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
     // whose existing salary is less than the average salary.
     @Transactional
     @Modifying
-    @Query("update Employee e set e.salary = :newsal where e.salary = :minSalary")
-    public void updateEmployeeSalary(@Param("minSalary") Integer minSalary, @Param("newsal") Integer newsal);
+    @Query("update Employee e set e.salary = :newsal where e.salary < :avgSalary")
+    public void updateEmployeeSalary(@Param("avgSalary") Integer avgSalary, @Param("newsal") Integer newsal);
+
+
+
+
+    // Help for question 3
+    @Query("select min(salary) as minsal from Employee")
+    public Integer findMinSalary();
 
 
     // Question 3
